@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио веб-разработчика</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo img {
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+        
+        .nav-links a:hover {
+            color: mediumpurple;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: mediumpurple;
+            transition: width 0.3s;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .content {
+            flex: 1;
+            padding: 40px 0;
+        }
+        
+        h1 {
+            text-align: center;
+            color: mediumpurple;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+        
+        .intro {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .intro img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .intro-text {
+            flex: 1;
+        }
+        
+        .intro-text p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            text-align: left;
+        }
+        
+        .intro-text strong {
+            color: mediumpurple;
+        }
+        
+        .skills {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-top: 30px;
+        }
+        
+        .skills h2 {
+            color: mediumpurple;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .skill-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .skill-card h3 {
+            color: mediumpurple;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+        
+        @media (max-width: 768px) {
+            .intro {
+                flex-direction: column;
+            }
+            
+            .intro img {
+                max-width: 100%;
+            }
+            
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav-links {
+                gap: 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="C:\Users\musta\OneDrive\Рабочий стол\директория\img\fabula-ai.png" width="80" height="80" alt="Логотип">
+                    <span>Портфолио</span>
+                </div>
+                <div class="nav-links">
+                    <a href="index1.html">Главная</a>
+                    <a href="index2.html">Обо мне</a>
+                    <a href="index3.html">Контакты</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="content">
+        <div class="container">
+            <h1>Добро пожаловать!</h1>
+            
+            <div class="intro">
+                <img src="https://img.freepik.com/premium-photo/blurry-picture-computer-desk_875722-17553.jpg" alt="Рабочее место">
+                <div class="intro-text">
+                    <p>Привет!</p>
+                    <p>Я начинающий <strong>веб-разработчик</strong>, и я верю, что интернет должен быть <i>удобным</i> и <i>доступным</i> для всех!</p>
+                    <p><i>Моя страсть – создавать адаптивные и доступные веб-сайты,</i> которые отйчно смотрятся и безупречно работают на любом устройстве, а также удобны для людей с разными потребностями. Я быстро учусь, постоянно развиваюсь и стремлюсь создавать веб-сайты, которыми люди будут рады пользоваться. Обратитесь ко мне, чтобы сделать ваш проект инклюзивным и дружелюбным к пользователям!</p>
+                </div>
+            </div>
+            
+            <div class="skills">
+                <h2>Мои навыки</h2>
+                <div class="skill-cards">
+                    <div class="skill-card">
+                        <h3>Адаптивный дизайн</h3>
+                        <p>Создание сайтов, которые отлично выглядят на любом устройстве</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Доступность</h3>
+                        <p>Разработка с учетом потребностей всех пользователей</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Современные технологии</h3>
+                        <p>Использование актуальных инструментов и подходов</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 Мой сайт</p>
+        </div>
+    </footer>
+</body>
+</html>
